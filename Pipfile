@@ -4,25 +4,51 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-python-dotenv = "*"
-requests = "*"
+python-dotenv = "0.19.2"
+requests = "2.26.0"
 
 [dev-packages]
-autopep8 = "*"
-debugpy = "*"
-flake8 = "*"
-flake8-blind-except = "*"
-flake8-breakpoint = "==1.1.0"
-flake8-builtins = "==1.4.2"
-flake8-comprehensions = "==3.2.2"
-flake8-docstrings = "*"
-flake8-eradicate = "==0.3.0"
-flake8-logging-format = "==0.6.0"
-flake8-print = "==3.1.4"
-flake8-rst-docstrings = "*"
-flake8-typing-imports = "==1.6.0"
-pep8-naming = "==0.9.1"
-pre-commit = "*"
+conda = '4.3.16'
+ipython = '7.30.1'
+
+mock = '4.0.3'
+moto = '2.2.16'
+
+debugpy = '1.5.1'
+ptvsd = '4.3.2'
+
+flake8 = '4.0.1'
+flake8-blind-except = '0.2.0'
+flake8-breakpoint = '1.1.0'
+flake8-builtins = '1.5.3'
+flake8-comprehensions = '3.7.0'
+flake8-docstrings = '1.6.0'
+flake8-eradicate = '1.2.0'
+flake8-logging-format = '0.6.0'
+flake8-print = '4.0.0'
+flake8-rst-docstrings = '0.2.3'
+flake8-typing-imports = '1.11.0'
+pylint = '2.12.1'
+
+cfn-lint = '0.56.2'
+pep8-naming = '0.12.1'
+
+autopep8 = '1.6.0'
+rstcheck = '3.3.1'
+snooty-lextudio = '1.11.5'
+
+pytest = '6.2.5'
+pytest-cov = '3.0.0'
+pytest-html = '3.1.1'
+pytest-mock = '3.6.1'
+pytest-xdist = '2.4.0'
+testfixtures = '6.18.3'
+
+bandit = '1.7.1'
+safety = '1.10.3'
+twine = '3.6.0'
+
+pre-commit = '2.15.0'
 
 [requires]
 python_version = "3.8"

@@ -1,7 +1,9 @@
 {
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": false,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintUseMinimalCheckers": true,
+  "python.linting.pylintArgs": ["--max-line-length=160", "--enable=W,E,F"],
   "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Args": [
     "--experimental",
@@ -10,12 +12,14 @@
   ],
   "python.autoComplete.addBrackets": true,
   "python.analysis.completeFunctionParens": true,
-  "python.pythonPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
-  "python.defaultInterpreterPath": "~/.local/share/virtualenvs/py-aws-sam-cdk-app-cJsps_cs/bin/python",
+  "python.pythonPath": "./.venv/bin/python",
+  "python.defaultInterpreterPath": "./.venv/bin/python",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": ["source.fixAll"]
   },
-  "restructuredtext.confPath": ""
+  "restructuredtext.confPath": "",
+  "restructuredtext.languageServer.disabled": false
 }

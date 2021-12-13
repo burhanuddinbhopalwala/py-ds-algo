@@ -9,9 +9,10 @@ def maxm_occurence(word: str):
         h[ord(char)] += 1
 
     return chr(h.index(max(h)))
-
+################################################################################
 
 # print(maxm_occurence("Burhanuddin"))
+
 
 def de_dup(word: str):
     result = []
@@ -24,6 +25,7 @@ def de_dup(word: str):
 
 
 # print(de_dup('Data'))
+################################################################################
 
 def check_rotation(word1, word2):
     # return sorted(word1) == sorted(word2)
@@ -32,13 +34,14 @@ def check_rotation(word1, word2):
 
 
 # print(check_rotation("madam", "adamm"))
+################################################################################
 
 def is_palindrome(word):
     return word == reverse_string_stack(word)
 
 
 # print(is_palindrome("madam"))
-
+################################################################################
 
 def first_non_repeating_char(word: str):
     store = {}
@@ -56,5 +59,6 @@ def first_non_repeating_char(word: str):
 
 
 print(first_non_repeating_char('Burhanuddin'))
+################################################################################
 
 # * Pending: Maxm and Minm with minm no of comparisons

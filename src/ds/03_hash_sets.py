@@ -13,6 +13,7 @@ def check_duplicates_k(nums, k):
             s.discard(nums[index - k])
         s.add(num)
     s.clear()
+################################################################################
 
 
 def distinct_k_window(nums, k):
@@ -32,6 +33,7 @@ def distinct_k_window(nums, k):
             result -= 1
         s.add(nums[index])
     return result
+################################################################################
 
 
 def disjoint_set(nums1, nums2):
@@ -42,6 +44,7 @@ def disjoint_set(nums1, nums2):
         if num in s1:
             return False
     return True
+################################################################################
 
 
 def group_by_first_occ(nums):
@@ -69,3 +72,4 @@ nums = [2, 3, 5, 6, 8, 5, 8, 9, 9]
 # print(group_by_first_occ(nums))
 nums = [2, 3, 5, 6]
 print(distinct_k_window(nums, 3))
+################################################################################

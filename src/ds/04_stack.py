@@ -35,7 +35,7 @@ def merge_overlap(intervals: list(tuple())):
 
 # * TC = O(nlogn) Includes sorting
 # print(merge_overlap(intervals))
-
+################################################################################
 
 def closest_greater_right(nums: list) -> list:
     stack = []
@@ -52,9 +52,11 @@ def closest_greater_right(nums: list) -> list:
 
 # * TC = O(n)
 # print(closest_greater_right([6, 3, 4, 9, 2, 1]))
-
+################################################################################
 
 # * Stock Span problem
+
+
 def evaluate_span(nums: list):
     stack = []
     results = [0] * len(nums)
@@ -73,6 +75,7 @@ def evaluate_span(nums: list):
 
 # * TC = O(n)
 # print(evaluate_span([6, 3, 4, 9, 2, 1]))
+################################################################################
 
 # * Get minimum in O(1)
 
@@ -112,6 +115,7 @@ class Stack(object):
 # print(s.find_minimum())  # * 3
 # print(s.pop())  # * 3
 # print(s.find_minimum())  # * 4
+################################################################################
 
 def reverse_string_stack(string: str):
     stack = []
@@ -125,3 +129,4 @@ def reverse_string_stack(string: str):
 
 
 # print(reverse_string_stack("Burhanuddin"))
+################################################################################

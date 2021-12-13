@@ -112,3 +112,16 @@ class Stack(object):
 # print(s.find_minimum())  # * 3
 # print(s.pop())  # * 3
 # print(s.find_minimum())  # * 4
+
+def reverse_string_stack(string: str):
+    stack = []
+    results = []
+    for char in string:
+        stack.append(char)
+
+    while bool(stack):
+        results.append(stack.pop())
+    return ''.join(results)
+
+
+# print(reverse_string_stack("Burhanuddin"))

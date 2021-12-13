@@ -32,12 +32,17 @@ class Heap(object):
         self.min_heapify(self.store, len(self.store), 0)
         return pop
 
+    def find_kth_largest(self, k: int):
+        for _ in range(len(self.store) - k):
+            self.store.pop(0)
+            self.min_heapify(self.store, len(self.store), 0)
+        pop = self.store.pop(0)
+        self.min_heapify(self.store, len(self.store), 0)
+        return pop
+
 
 heap = Heap([10, 20, 3, 4, 5, 6, 7])
-print(heap.pop())
-print(heap.pop())
-print(heap.pop())
-
+print(heap.find_kth_largest(3))  # * 7
 
 # class Solution(object):
 #     @staticmethod
@@ -54,3 +59,8 @@ print(heap.pop())
 
 
 # print(Solution.findKthLargest([1, 2, 3, 4, 5, 6, 7], 3))
+
+
+# * Common ones:
+# Max heap to Min Heap: O(nlogn) -> O(n)
+# BST to Max Heap: Reverse Inorder Traversal: O(n)

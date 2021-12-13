@@ -1,0 +1,1 @@
+# * Mathematical Algorithm - Lucky number

@@ -1,9 +1,13 @@
 SELECT
   DENSE_RANK() OVER (
+    PARTITION BY c1
     ORDER BY
-      v
-  ) my_dense_rank,
+      c2
+  ) AS my_dense_rank,
   RANK() OVER (
+    PARTITION BY c1
     ORDER BY
-      v
-  ) my_rank
+      c2
+  ) AS my_rank
+FROM
+  tests;

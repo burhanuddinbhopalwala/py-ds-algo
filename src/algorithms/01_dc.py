@@ -89,7 +89,7 @@ def get_peak_element(arr, start, end):
     elif end == start + 1 and arr[end] >= arr[start]:
         return arr[end]
 
-    mid = (start + end) // 2  # * Hil condiiton
+    mid = (start + end) // 2  # * Hill condiiton
     if arr[mid - 1] < arr[mid] and arr[mid] > arr[mid + 1]:
         return arr[mid]
 

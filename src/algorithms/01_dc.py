@@ -1,5 +1,3 @@
-import pdb
-import math
 
 # * TC = O(logn) - Binary search first occurrence and last occurrence
 
@@ -136,7 +134,7 @@ print(median_2_sorted_arr([1, 5, 7, 21, 34], [25, 54, 59, 67, 75], 2))
 ################################################################################
 
 
-def search_sorted_matrix(mat: [[]], ele: int):
+def search_sorted_matrix(mat: list(list), ele: int):
     row = len(mat)
     col = len(mat[0])
 
